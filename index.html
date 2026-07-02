@@ -8,21 +8,22 @@
 </head>
 <body>
     <div class="job-form">
+        <header>
         <h1>Job Application Form</h1>
-
+        </header>
         <form>
             <label for="name">Full Name:</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
 
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
 
             <label for="position">Position:</label>
-            <option>
-                <select>Developer</select>
-                <select>Designer</select>
-                <select>Manager</select>
-            </option>
+            <select required>
+                <option>Developer</option>
+                <option>Designer</option>
+                <option>Manager</option>
+            </select>
 
             <fieldset>
                 <legend>Availabilty:</legend>
@@ -32,8 +33,8 @@
                 <label>Part-Time</label>
             </fieldset>
 
-             <label for="message">Why do you want this job?:</label>
-            <textarea placeholder="write your motivation"></textarea>
+             <label for="message">Why do you want this job?</label>
+            <textarea placeholder="write your motivation" required></textarea>
 
             <button id="btn">Submit Application</button>
         </form>
